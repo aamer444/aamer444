@@ -3,7 +3,7 @@
 
 I'm
 Node.js Developer
-The crossover between design and programming has always been of interest to me, I've been lucky enough to work alongside some talented teams. I have a wide range of skills that include back-end development using open source technologies NodeJs Express front-end development (React, ReactJs, HTML5, CSS3, Javascript), database(MongoDB) 
+The crossover between design and programming has always been of interest to me, I've been lucky enough to work alongside some talented teams. I have a wide range of skills that include back-end development using open source technologies NodeJs Express front-end development (React, ReactJs, HTML5, CSS3, Javascript), database(SQL And MongoDB) 
 
 Languages and Tools: 
 
