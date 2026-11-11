@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Mohammad Aamer — Backend Engineer, Node.js, TypeScript, NestJS. 5+ years experience.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#67e8f9"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="orbA"><stop offset="0" stop-color="#22d3ee" stop-opacity=".55"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orbB"><stop offset="0" stop-color="#a78bfa" stop-opacity=".5"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#67e8f9" stroke-opacity=".06"/>
+    </pattern>
+    <clipPath id="type"><rect x="0" y="0" height="380" width="0">
+      <animate attributeName="width" values="0;1200;1200;0" keyTimes="0;.45;.85;1" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;0 0 1 1;.4 0 .2 1"/>
+    </rect></clipPath>
+    <style>
+      .f{font-family:'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+      .m{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace}
+      .rise{opacity:0;animation:rise .9s ease-out forwards}
+      .d1{animation-delay:.15s}.d2{animation-delay:.45s}.d3{animation-delay:.75s}.d4{animation-delay:1.05s}.d5{animation-delay:1.3s}
+      @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+      .blink{animation:blink 1s steps(1) infinite}
+      @keyframes blink{50%{opacity:0}}
+      .float{animation:float 9s ease-in-out infinite}
+      @keyframes float{50%{transform:translate(30px,-18px)}}
+      .float2{animation:float2 11s ease-in-out infinite}
+      @keyframes float2{50%{transform:translate(-36px,20px)}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="380" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="380" rx="18" fill="url(#grid)"/>
+  <g class="float"><circle cx="980" cy="90" r="190" fill="url(#orbA)"/></g>
+  <g class="float2"><circle cx="160" cy="320" r="210" fill="url(#orbB)"/></g>
+
+  <g class="rise d1" transform="translate(70 70)">
+    <rect width="64" height="64" rx="14" fill="#0f172a" stroke="#67e8f9" stroke-opacity=".5"/>
+    <text x="32" y="43" text-anchor="middle" class="m" font-size="26" font-weight="700" fill="#67e8f9">{ }</text>
+  </g>
+  <text x="152" y="98" class="m rise d1" font-size="15" fill="#94a3b8">~/aamer444 $ whoami</text>
+  <text x="152" y="122" class="m rise d1" font-size="13" fill="#64748b">// backend engineer · mumbai, india</text>
+
+  <text x="70" y="208" class="f rise d2" font-size="68" font-weight="800" fill="url(#name)" letter-spacing="-1">Mohammad Aamer</text>
+  <text x="72" y="252" class="f rise d3" font-size="24" font-weight="600" fill="#e2e8f0">Backend Engineer · Node.js · TypeScript · NestJS</text>
+
+  <g clip-path="url(#type)">
+    <text x="72" y="292" class="m" font-size="17" fill="#67e8f9">&gt; building secure REST &amp; real-time APIs, RBAC platforms and data pipelines that ship.</text>
+  </g>
+
+  <g class="rise d4 f" font-size="14" font-weight="600">
+    <g transform="translate(72 318)">
+      <rect width="150" height="34" rx="17" fill="#0f172a" stroke="#67e8f9" stroke-opacity=".45"/>
+      <circle cx="20" cy="17" r="5" fill="#22d3ee"><animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/></circle>
+      <text x="34" y="22" fill="#e2e8f0">5+ years exp</text>
+    </g>
+    <g transform="translate(236 318)">
+      <rect width="210" height="34" rx="17" fill="#0f172a" stroke="#a78bfa" stroke-opacity=".45"/>
+      <text x="105" y="22" text-anchor="middle" fill="#e2e8f0">APIs · Microservices · Auth</text>
+    </g>
+    <g transform="translate(460 318)">
+      <rect width="176" height="34" rx="17" fill="#0f172a" stroke="#67e8f9" stroke-opacity=".45"/>
+      <text x="88" y="22" text-anchor="middle" fill="#e2e8f0">MySQL · Postgres · Redis</text>
+    </g>
+    <g transform="translate(650 318)">
+      <rect width="168" height="34" rx="17" fill="#0f172a" stroke="#a78bfa" stroke-opacity=".45"/>
+      <text x="84" y="22" text-anchor="middle" fill="#e2e8f0">AI-assisted delivery</text>
+    </g>
+  </g>
+
+  <g class="rise d5" transform="translate(880 150)">
+    <rect width="270" height="150" rx="12" fill="#0b1020" fill-opacity=".85" stroke="#334155"/>
+    <circle cx="18" cy="16" r="5" fill="#f87171"/><circle cx="34" cy="16" r="5" fill="#fbbf24"/><circle cx="50" cy="16" r="5" fill="#34d399"/>
+    <g class="m" font-size="12.5">
+      <text x="16" y="50" fill="#94a3b8">$ npm run start:prod</text>
+      <text x="16" y="74" fill="#34d399">✔ db connected (mysql)</text>
+      <text x="16" y="96" fill="#34d399">✔ redis cache ready</text>
+      <text x="16" y="118" fill="#67e8f9">➜ api listening :3000</text>
+      <rect x="16" y="128" width="8" height="14" fill="#67e8f9" class="blink"/>
+    </g>
+  </g>
+</svg>

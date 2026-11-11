@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Animated request lifecycle: a client request passes through the NestJS or Express API, a JWT and RBAC guard, validation, and the service layer, which reads from Redis cache or MySQL/PostgreSQL, then returns a response; events are pushed over Socket.io">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <style>
+      .f{font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif}
+      .m{font-family:'JetBrains Mono',Consolas,monospace}
+      .wire{stroke:#334155;stroke-width:2;fill:none}
+      .flow{stroke:#67e8f9;stroke-width:2;fill:none;stroke-dasharray:6 10;animation:dash 1.2s linear infinite}
+      .flowv{stroke:#a78bfa;stroke-width:2;fill:none;stroke-dasharray:6 10;animation:dash 1.2s linear infinite}
+      @keyframes dash{to{stroke-dashoffset:-32}}
+      .pulse{animation:pulse 2.4s ease-in-out infinite}
+      @keyframes pulse{50%{stroke-opacity:1}}
+    </style>
+  </defs>
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <text x="30" y="38" class="m" font-size="14" fill="#94a3b8">// request lifecycle — how I build APIs</text>
+
+  <!-- wires -->
+  <path class="flow" d="M150 150H220"/>
+  <path class="flow" d="M360 150H420"/>
+  <path class="flow" d="M560 150H620"/>
+  <path class="flow" d="M760 150H820"/>
+  <path class="flowv" d="M890 120V86H960"/>
+  <path class="flowv" d="M890 180V214H960"/>
+  <path class="flow" d="M1100 86H1130V150"/>
+  <path class="flow" d="M1100 214H1130V150"/>
+  <path class="flowv" d="M290 190V250H960" />
+
+  <!-- packet -->
+  <circle r="7" fill="#67e8f9">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M150 150H890V86H1130V150"/>
+  </circle>
+  <circle r="5" fill="#a78bfa">
+    <animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M150 150H890V214H1130V150"/>
+  </circle>
+
+  <g class="f" font-weight="600">
+    <g transform="translate(30 115)">
+      <rect width="120" height="70" rx="12" fill="#0f172a" stroke="#67e8f9" stroke-opacity=".5"/>
+      <text x="60" y="32" text-anchor="middle" font-size="15" fill="#e2e8f0">Client</text>
+      <text x="60" y="52" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">REST · WS</text>
+    </g>
+    <g transform="translate(220 110)">
+      <rect width="140" height="80" rx="12" fill="#0f172a" stroke="#67e8f9" stroke-opacity=".4" class="pulse"/>
+      <text x="70" y="34" text-anchor="middle" font-size="15" fill="#e2e8f0">NestJS / Express</text>
+      <text x="70" y="56" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">controller</text>
+    </g>
+    <g transform="translate(420 110)">
+      <rect width="140" height="80" rx="12" fill="#0f172a" stroke="#a78bfa" stroke-opacity=".5"/>
+      <text x="70" y="34" text-anchor="middle" font-size="15" fill="#e2e8f0">JWT + RBAC</text>
+      <text x="70" y="56" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">guards · roles</text>
+    </g>
+    <g transform="translate(620 110)">
+      <rect width="140" height="80" rx="12" fill="#0f172a" stroke="#67e8f9" stroke-opacity=".5"/>
+      <text x="70" y="34" text-anchor="middle" font-size="15" fill="#e2e8f0">Validation</text>
+      <text x="70" y="56" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">DTO · pipes</text>
+    </g>
+    <g transform="translate(820 120)">
+      <rect width="140" height="60" rx="12" fill="#1e1b4b" stroke="#a78bfa"/>
+      <text x="70" y="36" text-anchor="middle" font-size="15" fill="#e2e8f0">Service layer</text>
+    </g>
+    <g transform="translate(960 60)">
+      <rect width="140" height="52" rx="12" fill="#0f172a" stroke="#f87171" stroke-opacity=".6"/>
+      <text x="70" y="24" text-anchor="middle" font-size="14" fill="#e2e8f0">Redis</text>
+      <text x="70" y="41" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">cache · sessions</text>
+    </g>
+    <g transform="translate(960 188)">
+      <rect width="140" height="52" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".6"/>
+      <text x="70" y="24" text-anchor="middle" font-size="14" fill="#e2e8f0">MySQL / Postgres</text>
+      <text x="70" y="41" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">TypeORM</text>
+    </g>
+    <text x="300" y="242" font-size="12" fill="#a78bfa" class="m">socket.io events →</text>
+    <g transform="translate(1110 136)">
+      <text x="0" y="0" font-size="11" fill="#34d399" class="m">200</text>
+      <text x="0" y="14" font-size="11" fill="#34d399" class="m">OK</text>
+    </g>
+  </g>
+</svg>

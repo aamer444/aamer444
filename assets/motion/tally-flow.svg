@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220" role="img" aria-label="Animated tally-helper pipeline: Excel registers, PDF bills and bank statements are uploaded, mapped to ledgers, reviewed, and pushed as XML vouchers into TallyPrime">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <style>
+      .f{font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif}
+      .m{font-family:'JetBrains Mono',Consolas,monospace}
+      .flow{stroke:#67e8f9;stroke-width:2;fill:none;stroke-dasharray:6 10;animation:dash 1.2s linear infinite}
+      @keyframes dash{to{stroke-dashoffset:-32}}
+      .step{animation:glow 5s ease-in-out infinite}
+      .s2{animation-delay:1s}.s3{animation-delay:2s}.s4{animation-delay:3s}.s5{animation-delay:4s}
+      @keyframes glow{0%,30%,100%{stroke:#334155}10%,20%{stroke:#67e8f9}}
+    </style>
+  </defs>
+  <rect width="1200" height="220" rx="18" fill="url(#bg)"/>
+  <text x="30" y="36" class="m" font-size="14" fill="#94a3b8">// tally-helper — Upload → Map → Review → Push → Done</text>
+
+  <path class="flow" d="M210 125H1000"/>
+  <circle r="6" fill="#a78bfa"><animateMotion dur="5s" repeatCount="indefinite" path="M210 125H1000"/></circle>
+
+  <g class="f" font-weight="600">
+    <g transform="translate(30 70)">
+      <rect width="180" height="110" rx="12" fill="#0f172a" stroke="#334155"/>
+      <text x="16" y="30" font-size="14" fill="#e2e8f0">📊 Excel registers</text>
+      <text x="16" y="60" font-size="14" fill="#e2e8f0">📄 Supplier PDFs</text>
+      <text x="16" y="90" font-size="14" fill="#e2e8f0">🏦 Bank statements</text>
+    </g>
+    <g transform="translate(250 95)"><rect class="step" width="140" height="60" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+      <text x="70" y="27" text-anchor="middle" font-size="15" fill="#e2e8f0">Parse</text><text x="70" y="45" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">importers</text></g>
+    <g transform="translate(430 95)"><rect class="step s2" width="140" height="60" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+      <text x="70" y="27" text-anchor="middle" font-size="15" fill="#e2e8f0">Map</text><text x="70" y="45" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">fuzzy · learned</text></g>
+    <g transform="translate(610 95)"><rect class="step s3" width="140" height="60" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+      <text x="70" y="27" text-anchor="middle" font-size="15" fill="#e2e8f0">Review</text><text x="70" y="45" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">GST · validate</text></g>
+    <g transform="translate(790 95)"><rect class="step s4" width="140" height="60" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+      <text x="70" y="27" text-anchor="middle" font-size="15" fill="#e2e8f0">Push XML</text><text x="70" y="45" text-anchor="middle" font-size="11" fill="#94a3b8" class="m">tally-client</text></g>
+    <g transform="translate(990 80)"><rect class="step s5" width="180" height="90" rx="12" fill="#1e1b4b" stroke="#334155" stroke-width="2"/>
+      <text x="90" y="40" text-anchor="middle" font-size="16" fill="#e2e8f0">TallyPrime</text><text x="90" y="62" text-anchor="middle" font-size="12" fill="#34d399" class="m">✔ vouchers posted</text></g>
+  </g>
+</svg>

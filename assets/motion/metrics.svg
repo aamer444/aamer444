@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="1200" height="170" role="img" aria-label="5+ years experience, Node.js and TypeScript core stack, 4 public projects, backend plus full-stack delivery">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <style>
+      .f{font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif}
+      .c{opacity:0;animation:in .8s ease-out forwards}
+      .c1{animation-delay:.1s}.c2{animation-delay:.35s}.c3{animation-delay:.6s}.c4{animation-delay:.85s}
+      @keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+      .fill{animation:grow 1.6s ease-out forwards;transform:scaleX(0);transform-origin:left;transform-box:fill-box}
+      @keyframes grow{to{transform:scaleX(1)}}
+    </style>
+  </defs>
+  <g class="f">
+    <g class="c c1" transform="translate(10 10)">
+      <rect width="275" height="150" rx="16" fill="url(#card)" stroke="#67e8f9" stroke-opacity=".3"/>
+      <text x="24" y="70" font-size="48" font-weight="800" fill="#67e8f9">5+</text>
+      <text x="24" y="100" font-size="15" fill="#e2e8f0" font-weight="600">Years in production</text>
+      <rect x="24" y="118" width="227" height="6" rx="3" fill="#1e293b"/><rect x="24" y="118" width="227" height="6" rx="3" fill="url(#bar)" class="fill"/>
+    </g>
+    <g class="c c2" transform="translate(305 10)">
+      <rect width="275" height="150" rx="16" fill="url(#card)" stroke="#a78bfa" stroke-opacity=".3"/>
+      <text x="24" y="70" font-size="40" font-weight="800" fill="#a78bfa">Node · TS</text>
+      <text x="24" y="100" font-size="15" fill="#e2e8f0" font-weight="600">Core backend stack</text>
+      <rect x="24" y="118" width="227" height="6" rx="3" fill="#1e293b"/><rect x="24" y="118" width="210" height="6" rx="3" fill="url(#bar)" class="fill"/>
+    </g>
+    <g class="c c3" transform="translate(600 10)">
+      <rect width="275" height="150" rx="16" fill="url(#card)" stroke="#67e8f9" stroke-opacity=".3"/>
+      <text x="24" y="70" font-size="48" font-weight="800" fill="#67e8f9">4</text>
+      <text x="24" y="100" font-size="15" fill="#e2e8f0" font-weight="600">Open-source projects</text>
+      <rect x="24" y="118" width="227" height="6" rx="3" fill="#1e293b"/><rect x="24" y="118" width="180" height="6" rx="3" fill="url(#bar)" class="fill"/>
+    </g>
+    <g class="c c4" transform="translate(895 10)">
+      <rect width="295" height="150" rx="16" fill="url(#card)" stroke="#a78bfa" stroke-opacity=".3"/>
+      <text x="24" y="70" font-size="40" font-weight="800" fill="#a78bfa">API → UI</text>
+      <text x="24" y="100" font-size="15" fill="#e2e8f0" font-weight="600">Backend-first, full-stack ready</text>
+      <rect x="24" y="118" width="247" height="6" rx="3" fill="#1e293b"/><rect x="24" y="118" width="200" height="6" rx="3" fill="url(#bar)" class="fill"/>
+    </g>
+  </g>
+</svg>

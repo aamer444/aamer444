@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Good APIs are boring in production — predictable, secure and fast. Mohammad Aamer, Backend Engineer.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e1b4b"/><stop offset="1" stop-color="#0b1020"/></linearGradient>
+    <linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#67e8f9"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <style>
+      .f{font-family:'Segoe UI',Inter,-apple-system,Helvetica,Arial,sans-serif}
+      .w{fill:none;stroke:url(#t);stroke-width:2;opacity:.35}
+      .a{animation:wave 6s ease-in-out infinite}
+      .b{animation:wave 8s ease-in-out infinite reverse}
+      @keyframes wave{50%{transform:translateX(-60px)}}
+      .in{opacity:0;animation:in 1.2s ease-out .3s forwards}
+      @keyframes in{to{opacity:1}}
+    </style>
+  </defs>
+  <rect width="1200" height="200" rx="18" fill="url(#bg)"/>
+  <path class="w a" d="M-60 160 Q 90 120 240 160 T 540 160 T 840 160 T 1140 160 T 1440 160"/>
+  <path class="w b" d="M-60 175 Q 90 140 240 175 T 540 175 T 840 175 T 1140 175 T 1440 175"/>
+  <g class="f in" text-anchor="middle">
+    <text x="600" y="78" font-size="28" font-weight="700" fill="url(#t)">“Good APIs are boring in production — predictable, secure and fast.”</text>
+    <text x="600" y="116" font-size="16" fill="#94a3b8">Mohammad Aamer · Backend Engineer</text>
+  </g>
+</svg>
