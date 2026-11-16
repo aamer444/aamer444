@@ -56,16 +56,6 @@ const aamer = {
 
 <br/>
 
-## 📊 At a Glance
-
-<div align="center">
-
-<img src="assets/motion/metrics.svg" width="100%" alt="5+ years experience, Node.js and TypeScript core stack, 4 public projects, backend-first and full-stack ready" />
-
-</div>
-
-<br/>
-
 <img src="assets/motion/divider.svg" width="100%" alt="" />
 
 ## 🧩 What I Do
@@ -157,20 +147,12 @@ Role-based access control platform: users, roles, permissions, sessions and a da
 </td>
 </tr>
 <tr>
-<td valign="top" width="50%">
+<td valign="top" colspan="2">
 
 ### 🏭 [esper_home](https://github.com/aamer444/esper_home)
 Marketing site for **Esper Radiators &amp; Products** — product catalogue, SEO, scroll animations and enquiry forms.
 
 `React 19` `TypeScript` `Vite` `Tailwind CSS 4` `React Hook Form`
-
-</td>
-<td valign="top" width="50%">
-
-### 📄 [TEST_DLP](https://github.com/aamer444/TEST_DLP)
-OCR document-processing API — accepts uploads or base64 images/PDFs, validates type and size, extracts data with Redis-backed caching.
-
-`Node.js` `Express` `OCR` `Redis`
 
 </td>
 </tr>
@@ -272,11 +254,6 @@ OCR document-processing API — accepts uploads or base64 images/PDFs, validates
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=aamer444&show_icons=true&hide_border=true&bg_color=0f172a&title_color=67e8f9&icon_color=a78bfa&text_color=cbd5e1&count_private=true&include_all_commits=true" alt="GitHub stats" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aamer444&layout=compact&hide_border=true&bg_color=0f172a&title_color=67e8f9&text_color=cbd5e1" alt="Most used languages" />
-
-<br/><br/>
-
 <img width="70%" src="https://streak-stats.demolab.com?user=aamer444&theme=transparent&hide_border=true&stroke=94a3b8&ring=22d3ee&fire=a78bfa&currStreakLabel=67e8f9&currStreakNum=67e8f9&sideNums=94a3b8&sideLabels=94a3b8&dates=94a3b8" alt="Contribution streak" />
 
 <br/><br/>
@@ -293,9 +270,10 @@ OCR document-processing API — accepts uploads or base64 images/PDFs, validates
 
 ## 🎯 Current Focus
 
-- 🔐 Hardening **rbac_backend** — fine-grained permissions, session revocation and audit logs
+- ☕ Moving forward with **Java** and **Groovy** on the JVM, plus **data structures &amp; algorithms**
+- 🐹 Building fast, concurrent backend services in **Go**
+- 🧠 Exploring **agentic AI** and **generative AI**: designing AI agents that use tools and work through tasks in multiple steps
 - 🧾 Shipping **tally-helper** modules — bank statement auto-classification and credit/debit notes
-- ☕ Leveling up in **Java** and **data structures &amp; algorithms**
 - 🤖 Building faster with **AI-assisted engineering** while keeping tests and reviews strict
 
 <details>

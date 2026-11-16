@@ -2,13 +2,17 @@ name: Generate contribution snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main, profile-preview]
 
 permissions:
   contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
@@ -19,9 +23,10 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Dots go from empty to busiest day; colors match the profile's cyan/violet theme.
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#67e8f9&color_dots=#161b22,#1e3a5f,#2563eb,#22d3ee,#a78bfa
+            dist/github-snake.svg?color_snake=#7c3aed&color_dots=#ebedf0,#cffafe,#67e8f9,#8b5cf6,#5b21b6&color_dot_border=#00000014
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#f0abfc&color_dots=#161b22,#0e4f5c,#0891b2,#22d3ee,#a78bfa&color_dot_border=#ffffff0d
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v4
